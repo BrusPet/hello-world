@@ -187,4 +187,11 @@ def callback(call):
                              reply_markup=markup2)
 
 
+@bot.message_handler(content_types=['text',])
+def error(message):
+    if not BotException(message):
+        text = 'Введена неизвестная команда, пожалуйста, воспользуйтесь всплывающей клавиатурой для ответов или используйте команду /help '
+        bot.send_message(message.chat.id, text)
+
+
 bot.polling()
