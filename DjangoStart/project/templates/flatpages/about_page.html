@@ -1,0 +1,20 @@
+{% extends 'flatpages/default.html' %}
+{% block title %}
+
+{{ flatpage.title }}
+{% endblock title %}
+
+{% block body %}
+{{ flatpage.content }}
+{{ flatpage.content }}
+    <style type ="text/css" >
+   .footer{
+       position: fixed;
+       text-align: center;
+       bottom: 0px;
+       width: 100%;
+   }
+</style>
+<div class="footer"><em><strong>for SkillFactory</strong></em></div>
+
+{% endblock body %}

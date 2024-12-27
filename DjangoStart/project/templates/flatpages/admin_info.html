@@ -1,0 +1,11 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
+
+{% block body%}
+<h2 style="text-align: center;"><strong>Welcome, <em>{{ user.get_username }}</em>!</strong></h2>
+<hr>
+<h2 style="text-align: center;"><br /><strong>Thanks for logging in.</strong></h2>
+{% endblock body %}
